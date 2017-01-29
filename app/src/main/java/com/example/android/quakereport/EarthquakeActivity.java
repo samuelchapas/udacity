@@ -65,7 +65,7 @@ public class EarthquakeActivity extends AppCompatActivity {
         earthquakes.add(new earthquake("Mexico City","Sabado 7 de junio 2017", 7.2));
         earthquakes.add(new earthquake("Moscow","Sabado 7 de junio 2017", 7.2));
         earthquakes.add(new earthquake("Rio de Janeiro","Sabado 7 de junio 2017", 7.2));
-        earthquakes.add(new earthquake("Paris","Sabado 7 de junio 2017", 7.2));
+
 
          */
         // Find a reference to the {@link ListView} in the layout
@@ -122,8 +122,7 @@ public class EarthquakeActivity extends AppCompatActivity {
             }
 
             // Create a fake list of earthquakes.
-            List<earthquake> earthquakesResult = QueryUtils.fetchEarthquakeData(urls[0]);
-            return earthquakesResult;
+            return QueryUtils.fetchEarthquakeData(urls[0]);
         }
 
         /**

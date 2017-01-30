@@ -13,8 +13,8 @@ import android.widget.TextView;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by samuel on 01-16-17.
@@ -41,7 +41,7 @@ public class earthquakeAdapter extends ArrayAdapter<earthquake> {
      * @param word A List of Android objects to display in a list
      *             colorResourceId is the color setted to back graound
      */
-    public earthquakeAdapter(Activity context, ArrayList<earthquake> earthquakes, int colorResourceId){
+    public earthquakeAdapter(Activity context, List<earthquake> earthquakes, int colorResourceId){
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
         // the second argument is used when the ArrayAdapter is populating a single TextView.
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not

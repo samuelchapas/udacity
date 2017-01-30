@@ -18,7 +18,7 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.android.quakereport.R.id.magnitud;
+//import static com.example.android.quakereport.R.id.magnitud;
 
 /**
  * Helper methods related to requesting and receiving earthquake data from USGS.
@@ -299,8 +299,8 @@ public final class QueryUtils {
 
                 // Create a new {@link Earthquake} object with the magnitude, location, time,
                 // and url from the JSON response.
-                Log.v(LOG_TAG,location + time + magnitud);
-                earthquake earthquake = new earthquake(location, time, magnitud, url);
+                Log.v(LOG_TAG,location);
+                earthquake earthquake = new earthquake(location, time, magnitude, url);
 
                 // Add the new {@link Earthquake} to the list of earthquakes.
                 earthquakes.add(earthquake);

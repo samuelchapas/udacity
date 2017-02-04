@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- #Menus
+
+It would clutter up our EarthquakeActivity if we put a big SETTINGS button above or
+below our list of earthquakes. A much better place for that button to live is inside
+the app bar on the top of the EarthquakeActivity.
+
+An Activity can inflate a menu resource file, and display the menu in the app bar.
+So next, let's define our menu items in a new menu resource file:
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.quakereport.EarthquakeActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/settings_menu_item"
+        android:icon="@mipmap/ic_filter"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom" />
+</menu>

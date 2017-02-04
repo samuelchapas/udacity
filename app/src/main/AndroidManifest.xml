@@ -31,6 +31,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- we'll need to declare our new activity in AndroidManifest.xml inside the tag:
+                In AndroidManifest.xml: in order to make a preference screen
+                each time that we click the menu item the settings activity appears and it will show
+                a back button.
+        -->
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settings_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.quakereport.EarthquakeActivity"/>
+        </activity>
     </application>
 
 </manifest>
